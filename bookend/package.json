@@ -1,0 +1,19 @@
+{
+  "name": "bookend",
+  "version": "1.0.0",
+  "description": "Node express js backend for the bookList app for the full stack app challenge",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server/server.js -w ./server/"
+  },
+  "author": "Frank Duodu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
