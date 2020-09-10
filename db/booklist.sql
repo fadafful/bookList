@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 10, 2020 at 02:00 AM
+-- Generation Time: Sep 10, 2020 at 03:22 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -62,7 +62,7 @@ CREATE TABLE `books` (
 INSERT INTO `books` (`id`, `name`, `isbn`, `author`) VALUES
 (1, 'A farewell to arms', '0-345-24223-8', 1),
 (2, 'A merchant of vernice', '9780192814548', 2),
-(3, 'Romeo and Juliet', '9781497438095', 2);
+(3, 'A tale of two cities', ' 9780141439600', 3);
 
 --
 -- Indexes for dumped tables
