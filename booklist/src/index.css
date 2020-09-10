@@ -67,6 +67,11 @@ code {
   color: #333333;
 }
 
+.book-list ul li:hover, .book-list ul li:focus {
+  background-color: whitesmoke;
+  padding-left: 15px;
+}
+
 .author-list {
   background-color: white;
   margin: 20px auto 20px auto;
@@ -103,6 +108,11 @@ code {
   color: #333333;
 }
 
+.author-list ul li:hover, .author-list ul li:focus {
+  background-color: whitesmoke;
+  padding-left: 15px;
+}
+
 @media screen and (max-width: 767px){
 
   .book-list {
@@ -125,8 +135,20 @@ code {
   color: #8c7b75;
 } 
 
-.add-book {
+.add {
   margin: 100px 100px 0px 100px;
+}
+
+@media screen and (max-width: 767px){
+
+  .add {
+    margin: 100px 10px 0px 10px;
+  }
+
+}
+
+.abook {
+  margin-top: 100px;
 }
 
 footer {

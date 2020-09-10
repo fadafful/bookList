@@ -2,11 +2,6 @@ const express = require('express');
 const router = express.Router();
 const db =  require('../db');
 
-books = [
-    {id: 1, name: "A farewell to arms", isbn: "12537BNE89", author: 1},
-    {id: 2, name: "The count of monte christo", isbn: "165383BFNU", author: 1}
-]
-
 // Get all books
 router.get('/books', async (req, res) => {
     try{

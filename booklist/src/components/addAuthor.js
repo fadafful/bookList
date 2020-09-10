@@ -52,7 +52,7 @@ function AddAuthor() {
                         <BookIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="./">Books</Link> | <AccountIcon className="app-icon mb-1 mr-2" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/authors">Authors</Link>
                     </div>
                 </div>
-                <form className="add-book needs-validation" noValidate validated={validated} onSubmit={handleSubmit}>
+                <form className="add needs-validation" noValidate validated={validated} onSubmit={handleSubmit}>
                     <div className="form-row">
                         <div className="form-group col-md-6">
                             <label>First name</label>
