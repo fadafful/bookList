@@ -13,7 +13,7 @@ let expressDB = {};
 // Retrieve all books in descending order
 expressDB.allBooks = () => {
    return new Promise((resolve,reject) => {
-        con.query('SELECT * FROM `books` `b` ORDER BY `b`.`id` DESC',(err,res) => {
+        con.query('SELECT * FROM `books` `b` INNER JOIN `authors` `a` ON `a`.`id` = `b`.`author` ORDER BY `b`.`id` DESC',(err,res) => {
                 if(err) reject(err)
                 resolve(res);
         })

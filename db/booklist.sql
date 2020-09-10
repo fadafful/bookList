@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2020 at 12:38 PM
+-- Generation Time: Sep 10, 2020 at 02:00 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -39,7 +39,8 @@ CREATE TABLE `authors` (
 
 INSERT INTO `authors` (`id`, `firstName`, `lastName`) VALUES
 (1, 'Ernest', 'Hemmingway'),
-(2, 'William', 'Shakespeare');
+(2, 'William', 'Shakespeare'),
+(3, 'Charles', 'Dickens');
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,8 @@ CREATE TABLE `books` (
 
 INSERT INTO `books` (`id`, `name`, `isbn`, `author`) VALUES
 (1, 'A farewell to arms', '0-345-24223-8', 1),
-(2, 'A merchant of vernice', '9780192814548', 2);
+(2, 'A merchant of vernice', '9780192814548', 2),
+(3, 'Romeo and Juliet', '9781497438095', 2);
 
 --
 -- Indexes for dumped tables
@@ -86,13 +88,13 @@ ALTER TABLE `books`
 -- AUTO_INCREMENT for table `authors`
 --
 ALTER TABLE `authors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
