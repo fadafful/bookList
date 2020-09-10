@@ -6,7 +6,7 @@ Bookend - Backend implementation with node and express
 - npm run dev ##to sart the the server on http://localhost:5000
 
 Booklist
-- npm start
+- npm start ## http://localhost:3000
 
 ## Available Scripts
 
