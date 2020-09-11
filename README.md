@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Database
+- Download and install XAMPP/WAMP/LAMP
+- Start the local services Apache and MySQL
+- Create the database with name booklist
+- Import the sql file from DB folder to the database you'll create
+
 Bookend - Backend implementation with node and express
 - Don't forgot to run npm i for all the node packages that may have been 
   ignored
@@ -7,6 +13,7 @@ Bookend - Backend implementation with node and express
 
 Booklist
 - npm start ## http://localhost:3000
+
 
 ## Available Scripts
 
