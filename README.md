@@ -7,12 +7,14 @@ Database
 - Import the sql file from DB folder to the database you'll create
 
 Bookend - Backend implementation with node and express
-- Don't forgot to run npm i for all the node packages that may have been 
+- Don't forgot to run the command "npm i" for all the node packages that may have been 
   ignored
-- npm run dev ##to sart the the server on http://localhost:5000
+- Run the command to install nodemon as a dev dependency for automatic refreshing of your react app "npm install --save-dev nodemon" 
+- Run this command to start npm run dev ##to sart the the server on http://localhost:5000
 
 Booklist
-- npm start ## http://localhost:3000
+- Run this command to install Material design Icons "npm install mdi-react" 
+- Run this command to start the react app "npm start" to view it in the browser on http://localhost:3000
 
 
 ## Available Scripts
