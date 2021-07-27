@@ -5,13 +5,13 @@ import url from '../config'
 import {Link} from 'react-router-dom'
 import AccountIcon from 'mdi-react/AccountIcon'
 import BookAddIcon from 'mdi-react/BookAddIcon';
-import AccountAddIcon from 'mdi-react/AccountAddIcon';
+import AccountPlusIcon from 'mdi-react/AccountPlusIcon';
 
 export default class Books extends Component {
 
     constructor(){
         super();
-        this.state = {books:[]}
+        this.state = {books:[], brain: 'Anonymous'};
     }
 
     getBooks() {
@@ -38,10 +38,10 @@ export default class Books extends Component {
                 <h5 className="page-header">Booklist - Know more about your favourite books</h5>
                 <div className="row align-items-center">
                     <div className="col-md-12 text-center">
-                    <AccountIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/authors">Authors</Link> | <BookAddIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-book">Add book</Link> | <AccountAddIcon className="app-icon mb-1 mr-2" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-author">Add author</Link>
+                    <AccountIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/authors">Authors</Link> | <BookAddIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-book">Add book</Link> | <AccountPlusIcon className="app-icon mb-1 mr-2" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-author">Add author</Link>
                     </div>
                 </div>
-                <BookList books={this.state.books} /> 
+                <BookList books={this.state.books} />
             </div>
         )
     }

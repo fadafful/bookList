@@ -5,7 +5,7 @@ import url from '../config'
 import {Link} from 'react-router-dom'
 import BookIcon from 'mdi-react/BookIcon';
 import BookAddIcon from 'mdi-react/BookAddIcon';
-import AccountAddIcon from 'mdi-react/AccountAddIcon';
+import AccountPlusIcon from 'mdi-react/AccountPlusIcon';
 
 export default class Authors extends Component {
 
@@ -38,7 +38,7 @@ export default class Authors extends Component {
                 <h5 className="page-header">Authors Here are all your favourite authors</h5>
                 <div className="row align-items-center">
                     <div className="col-md-12 text-center">
-                    <BookIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="./">Books</Link> | <BookAddIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-book">Add book</Link> |  <AccountAddIcon className="app-icon mb-1 mr-2" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-author">Add author</Link>
+                    <BookIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="./">Books</Link> | <BookAddIcon className="app-icon mb-1 mr-1" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-book">Add book</Link> |  <AccountPlusIcon className="app-icon mb-1 mr-2" size={16} /><Link className="header-links" style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-author">Add author</Link>
                     </div>
                 </div>
                 <AuthorList authors={this.state.authors} />
