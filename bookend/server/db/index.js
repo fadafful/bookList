@@ -98,4 +98,19 @@ expressDB.updateAuthor = (id,firstName,lastName) => {
         })
 }
 
+// delete author
+expressDB.deleteAuthor = (id) => {
+        
+              console.log(id);
+                return new Promise((resolve, reject) => {
+                        con.query("DELETE FROM `authors` WHERE `id`=?",[id],
+                        (err,res) => {
+                                if(err) reject(err);
+                                console.log(resolve(res[0]));
+                        })
+                })
+              
+        
+}
+
 module.exports = expressDB;
