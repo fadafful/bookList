@@ -4,6 +4,7 @@ import AddBook from './addBook'
 import AddAuthor from './addAuthor'
 import Authors from './authors'
 import Book from './book'
+import Author from './author'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 export default function app() {
@@ -13,6 +14,7 @@ export default function app() {
                 <Switch>
                     <Route path="/" exact component={Books}/>
                     <Route path="/book/:name/:id" component={Book}/>
+                    <Route path="/author/:name/:id" component={Author}/>
                     <Route path="/add-book" component={AddBook}/>
                     <Route path="/authors" component={Authors}/>
                     <Route path="/add-author" component={AddAuthor}/>

@@ -81,11 +81,13 @@ function AddBook() {
                                 </div>
                             </div>
                             <div className="form-row">
+                                <div className="form-group col-md-12">
                                 <label className="my-1 mr-2">Author</label>
                                 <select className="custom-select my-1 mr-sm-2" id="author" onChange={(e) => setAuthor(e.target.value)} required>
                                     <option>Choose author</option>
                                     {authors.map((author) => (<option key={author.id} value={author.id}>{author.firstName} {author.lastName}</option>))}
                                 </select>
+                                </div>
                             </div>
                             <button type="submit" className="btn btn-primary mt-3">Add book</button>
                         </form>

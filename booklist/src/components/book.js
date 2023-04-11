@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import url from '../config'
-import AccountIcon from 'mdi-react/AccountIcon';
-import BookAddIcon from 'mdi-react/BookAddIcon';
-import AccountPlusIcon from 'mdi-react/AccountPlusIcon';
-import BookIcon from 'mdi-react/BookIcon';
+import AccountIcon from 'mdi-react/AccountIcon'
+import BookAddIcon from 'mdi-react/BookAddIcon'
+import AccountPlusIcon from 'mdi-react/AccountPlusIcon'
+import BookIcon from 'mdi-react/BookIcon'
 import BarcodeIcon from 'mdi-react/BarcodeIcon'
 
 
@@ -46,7 +46,7 @@ export default class Book extends Component {
                     </div>
                 </div>
                 <div className="book-list abook">
-        <            div className="row">
+                    <div className="row">
                         <div><BookIcon className="app-icon mb-1 mr-1" size={16} /><span>{this.state.book.name}</span></div>
                     </div>
                     <div className="row">
